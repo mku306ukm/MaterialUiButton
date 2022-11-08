@@ -1,10 +1,6 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-import DeleteIcon from '@mui/icons-material/Delete'; import { ButtonGroup, Fab, IconButton, Stack } from '@mui/material';
-import AddIcon from '@mui/icons-material/Add';
-import EditIcon from '@mui/icons-material/Edit';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import NavigationIcon from '@mui/icons-material/Navigation';
+import DeleteIcon from '@mui/icons-material/Delete'; import { IconButton, Stack } from '@mui/material';
 import Box from '@mui/material/Box';
 import { Fingerprint, PhotoCamera } from '@mui/icons-material';
 import SendIcon from '@mui/icons-material/Send';
@@ -53,27 +49,6 @@ const MaterialUiButton = () => {
 
             <h2 style={{ color: 'green' }}>Button with Click Event</h2>
             <Button variant='contained' onClick={() => console.log('Button Clicked')}>Click Me</Button>
-
-            <h2 style={{ color: 'green' }}>Button Group</h2>
-            <ButtonGroup variant='contained'>
-                <Button>One</Button>
-                <Button>Two</Button>
-                <Button>Three</Button>
-            </ButtonGroup>
-
-            <h2 style={{ color: 'green' }}>Vertical Button Group</h2>
-            <ButtonGroup variant='contained' orientation='vertical' color='secondary'>
-                <Button>One</Button>
-                <Button>Two</Button>
-                <Button>Three</Button>
-            </ButtonGroup>
-
-            <h2 style={{ color: 'green' }}>Floating Action Button</h2>
-            <Fab>R</Fab>
-            <Fab color='primary'> <AddIcon /> </Fab>
-            <Fab color='secondary'> <EditIcon /> </Fab>
-            <Fab color='secondary' variant='extended'> <NavigationIcon />Navigation </Fab>
-            <Fab disabled> <FavoriteIcon /> </Fab>
 
             {/* //=======Self Revision======== */}
 
@@ -197,6 +172,8 @@ const MaterialUiButton = () => {
                 <IconButton aria-label="fingerprint" color="error"><Fingerprint /></IconButton>
                 <IconButton aria-label="fingerprint" color="success"><Fingerprint /></IconButton>
             </Stack>
+
+            <h2>Colors</h2>
 
         </div>
     )
